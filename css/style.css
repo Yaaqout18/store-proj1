@@ -1,0 +1,761 @@
+/*  
+---------- #languages are used  only (HTMl & CSS) .
+-- *1.0 >> Header  .
+-- *1.1 >> Shopping-Car .
+-- *2.0 >> Section-Home .
+-- *3.0 >> Section-Number-1 Best products .
+-- *3.1 >> fire-icon .
+-- *3.2 >> Left&Right icons .
+-- *4.0 >> General-Section .
+-- *5.0 >> Subscription-Section .
+-- *6.0 >> Footer-Section .
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 3000px;
+  background-color: ghostwhite;
+}
+
+/*================================================== *1.0 >> Header . ============================================  */
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(67, 201, 201, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.search {
+  float: left;
+  border: 1px solid ghostwhite;
+  border-radius: 12px;
+  padding: 4px 40px;
+  margin-top: 11px;
+}
+
+.search:hover {
+  padding: 6px 42px;
+}
+
+.sr-icon {
+  float: left;
+  margin-left: 350px;
+  margin-top: 15px;
+  color: rgb(64, 54, 114);
+  cursor: pointer;
+}
+
+.nav-bar {
+  list-style: none;
+  float: left;
+  margin-left: 330px;
+  margin-top: 10px;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: #5E001F;
+  position: relative;
+}
+
+.nav-bar li a:hover {
+  font-size: 20px;
+}
+
+.nav-bar li a:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 22%;
+  left: 0;
+  bottom: 0;
+  background-color: #5E001F;
+  opacity: 0;
+  margin-bottom: -9px;
+}
+
+.nav-bar li a:hover::after {
+  width: 100%;
+  height: 20%;
+  opacity: 0.9;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.nav-bar li a:hover {
+  color: #dce6dc;
+}
+
+.sign-up {
+  border: 2px solid white;
+  border-radius: 11px;
+  padding: 4px 9px;
+  float: right;
+  margin-top: 11px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: rgb(64, 54, 114);
+}
+
+.sign-up:hover {
+  padding: 6px 11px;
+  color: rgba(240, 71, 4, 0.9);
+}
+
+/*  ==================================  *1.1 >> ^Shopping-car . ========================= */
+.sh-car {
+  position: fixed;
+  bottom: 90px;
+  right: 70px;
+  cursor: pointer;
+  font-size: 40px;
+  color: #ff5714;
+  z-index: 9;
+}
+
+.sh-car:hover {
+  font-size: 50px;
+}
+
+/* =========================================== *2.0  >> Section-Home . ==============================================*/
+.home {
+  height: 100vh;
+  background: url(../images/mainsection1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title1 {
+  color: #c5ebc3;
+  font-size: 64px;
+}
+
+.gif {
+  cursor: pointer;
+}
+
+.gif:hover {
+  font-size: 69px;
+  color: #ffb800;
+}
+
+.home-p {
+  font-size: 27px;
+  color: #92f68e;
+}
+
+.btn {
+  padding: 13px 40px;
+  border: 0px solid;
+  border-radius: 9px;
+  cursor: pointer;
+  color: #103593;
+  font-size: 20PX;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  padding: 16px 43px;
+  background-color: orangered;
+  transition: 1.3s;
+  color: #c5ebc3;
+}
+
+/* ======================================= *3.0  >>  #Section Number-1  Best products===================================*/
+.best-products h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 40px;
+  color: #06495f;
+}
+
+/* ========================= *3.1  >>   #fire-icon . ====================== */
+.ico-fire {
+  color: orangered;
+  cursor: pointer;
+}
+
+.ico-fire:hover {
+  font-size: 48px;
+}
+
+.underline-div {
+  width: 80px;
+  height: 6px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: orangered;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.parent1 {
+  height: 100vh;
+  color: #b5d6d6;
+}
+
+.best-products {
+  overflow: auto;
+}
+
+/* =================================== *3.2  >>   #Left&Right icons . =====================*/
+.ico-leftdir {
+  float: left;
+  margin-left: 30px;
+}
+
+.ico-rightdir {
+  float: right;
+  margin-right: 30px;
+}
+
+.ico-leftdir,
+.ico-rightdir {
+  margin-top: 280px;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(14, 42, 167);
+}
+
+.ico-leftdir:hover,
+.ico-rightdir:hover {
+  font-size: 37px;
+}
+
+.best {
+  float: left;
+  width: 230px;
+  height: 250px;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-left: 80px;
+  margin-top: 170px;
+  position: relative;
+}
+
+.best:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  opacity: 0;
+  border-radius: 15px;
+}
+
+.best:hover::after {
+  width: 40%;
+  height: 100%;
+  opacity: 0.7;
+  transition: 1.5s;
+}
+
+.star-best {
+  font-size: 12px;
+  margin-top: 40px;
+  color: yellow;
+  cursor: pointer;
+}
+
+.star-best:hover {
+  font-size: 18px;
+}
+
+.st1 {
+  margin-left: 17px;
+}
+
+.hart-best {
+  margin-left: 33px;
+  margin-top: 30px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.hart-best:hover {
+  font-size: 30px;
+  color: red;
+}
+
+.car-best {
+  margin-left: 33px;
+  margin-top: 30px;
+  font-size: 24px;
+  color: orangered;
+  cursor: pointer;
+}
+
+.car-best:hover {
+  font-size: 30px;
+}
+
+.over-ico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+  display: block;
+}
+
+.best:hover .over-ico {
+  visibility: visible;
+  transition: 3.5s;
+  opacity: 1;
+}
+
+.product1 {
+  margin-left: 140px;
+  background-image: url(../images/prod1.png);
+  background-size: cover;
+}
+
+.product1:hover {
+  background-image: url(../images/hprod1.png);
+}
+
+.product2 {
+  background-image: url(../images/prod2.png);
+  background-size: cover;
+}
+
+.product2:hover {
+  background-image: url(../images/hprod2.png);
+  transition: 2s;
+}
+
+.product3 {
+  background-image: url(../images/prod3.png);
+  background-size: cover;
+}
+
+.product3:hover {
+  background-image: url(../images/hprod3.png);
+  transition: 2s;
+}
+
+.product4 {
+  background-image: url(../images/prod4.jpg);
+  background-size: cover;
+}
+
+.product4:hover {
+  background-image: url(../images/hprod4.png);
+  transition: 2s;
+}
+
+/*========================================== *4.0   >>  #General Section . ====================================== */
+
+.parent2 {
+  height: 100vh;
+  background-image: url(../images/backgroundsec.png);
+  background-size: cover;
+}
+
+
+.parts {
+  float: left;
+  width: 240px;
+  height: 250px;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-left: 130px;
+  margin-top: 70px;
+  cursor: pointer;
+  background-size: cover;
+  position: relative;
+}
+
+.part1 {
+  margin-left: 270px;
+  background-image: url(../images/part1.png);
+}
+
+.part2 {
+  background-image: url(../images/part2.png);
+}
+
+.part3 {
+  background-image: url(../images/part3.png);
+}
+
+.part4 {
+  margin-left: 270px;
+  background-image: url(../images/part4.png);
+}
+
+.part5 {
+  background-image: url(../images/part5.png);
+}
+
+.part6 {
+  background-image: url(../images/part6.png);
+}
+
+.part4,
+.part5,
+.part6 {
+  margin-top: 60px;
+}
+
+.parts:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+  border-radius: 15px;
+}
+
+.parts:hover::after {
+  width: 100%;
+  height: 75%;
+  opacity: 0.7;
+  transition: 2s;
+  border-radius: 11px;
+}
+
+.over-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+  display: block;
+}
+
+.parts:hover .over-card {
+  visibility: visible;
+  transition: 3.5s;
+  opacity: 1;
+}
+
+.over-card h3 {
+  font-size: 25px;
+  color: ghostwhite;
+  margin-bottom: -1px;
+  margin-left: 12px;
+}
+
+.over-card h4 {
+  font-size: 15px;
+  color: rgb(216, 203, 203);
+  margin-left: 13px;
+}
+
+.general h2 {
+  text-align: center;
+  margin-top: 92px;
+  font-size: 40px;
+  color: #06495f;
+}
+
+.ico-star {
+  color: yellow;
+  cursor: pointer;
+}
+
+.ico-star:hover {
+  font-size: 48px;
+}
+
+.fa-star {
+  color: yellow;
+  margin-top: 3px;
+}
+
+.fa-star:hover {
+  font-size: 32px;
+}
+
+.str1 {
+  margin-left: 5px;
+}
+
+.over-card p {
+  color: #b5d6d6;
+}
+
+.rate {
+  margin-left: 13px;
+  color: #dce6dc;
+}
+
+.btn-card {
+  border: 0px solid;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: #06bee1;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+.btn-card:hover {
+  padding: 15px 27px;
+  color: white;
+  background-color: #06bee1;
+  transition: 1s;
+}
+
+.btn-card:hover .rate-star {
+  font-size: 17px;
+  color: yellow;
+  transition: 1s;
+}
+
+.over-card p {
+  margin: 5px 5px;
+}
+
+/*================================== *5.0  >>  #Subscription Section . =================================== */
+
+.parent3 {
+  height: 100vh;
+  background-image: url(../images/subbackground.png);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 70px;
+}
+
+.subscriptions h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.subscriptions h3 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 29px;
+  color: #06495f;
+}
+
+.sub1,
+.sub2,
+.sub3 {
+  width: 280px;
+  height: 420px;
+  border: 1px solid #004643;
+  border-radius: 5px;
+  float: left;
+  margin-left: 200px;
+  margin-top: 90px;
+  cursor: pointer;
+  position: relative;
+}
+
+.subs:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+}
+
+.subs:hover::after {
+  width: 100%;
+  height: 75%;
+  opacity: 0.7;
+  transition: 2s;
+}
+
+.over-card2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+  display: block;
+}
+
+.subs:hover .over-card2 {
+  visibility: visible;
+  transition: 3.5s;
+  opacity: 1;
+}
+
+.sub1 {
+  margin-left: 130px;
+}
+
+.subscriptions h4 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 37px;
+  color: #073b4c;
+}
+
+.price {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #06495f;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.price h5 {
+  margin-top: 15px;
+  font-size: 25px;
+  color: #06495f;
+}
+
+.subscriptions p {
+  margin-top: 38px;
+  margin-left: 12px;
+  font-size: 19px;
+  color: #1f2421;
+}
+
+.subscribe-btn {
+  margin-left: 71px;
+  margin-top: 50px;
+  padding: 8px 20px;
+  border: 0px solid;
+  border-radius: 13px;
+  color: #0f2a70;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  padding: 10px 24px;
+  background-color: #156064;
+  color: #e9fff9;
+}
+
+.ico-pay {
+  margin-left: 16px;
+  cursor: pointer;
+  color: #156064;
+}
+
+.ico-pay:hover {
+  font-size: 20px;
+  color: #06bee1;
+}
+
+.over-card2 h3 {
+  font-size: 25px;
+  color: ghostwhite;
+  margin-bottom: -1px;
+}
+
+.over-card2 h4 {
+  font-size: 15px;
+  color: rgb(216, 203, 203);
+}
+
+.over-card2 .str1 {
+  margin-left: 90px;
+}
+
+.over-card2 p {
+  color: #b5d6d6;
+}
+
+.over-card2 .btn2 {
+  color: #103593;
+}
+
+.over-card2 .btn2:hover {
+  color: white;
+}
+
+/*========================================== *6.0  >>  #Footer . =====================================================*/
+.footer-img {
+  width: 140px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.footer-img:hover {
+  width: 160px;
+  height: 120px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #cecec1;
+}
+
+.ico-f {
+  color: #156064;
+  font-size: 30px;
+  margin: 20px 3px 10px 10px;
+  cursor: pointer;
+}
+
+.ico-f:hover {
+  font-size: 39px;
+  color: rgb(20, 75, 238);
+}
+
+.fa-instagram:hover {
+  color: #d62828;
+}
+
+.footer h5 {
+  color: #589262;
+  margin: 20px;
+}
+
+.footer h4,
+h3 {
+  color: #156064;
+  margin-bottom: 20px;
+}
